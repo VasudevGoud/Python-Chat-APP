@@ -1,52 +1,65 @@
 
-# 🖥️ Python Client-Server Chat App
+# Python Chat App 
 
-This is a **basic client-server chat application** built using Python's `socket` and `threading` modules. It allows multiple clients to connect to a server and exchange messages.
+A basic terminal-based chat application built with Python using sockets and multithreading. This project demonstrates how a server can handle multiple clients at once, allowing real-time message broadcasting among all connected users. It's a simple yet effective way to learn and understand the fundamentals of network communication in Python.
 
-## 🚀 Features
-✅ Simple client-server communication using **TCP sockets**  
-✅ Handles multiple clients using **multithreading**  
-✅ Clients can **send messages** and **disconnect properly**  
-✅ **Scalable** – you can add improvements over time  
+## Features
 
----
+- Multithreaded server handling multiple clients
+- Basic message broadcasting to all clients
+- Graceful client disconnection
+- Easily extendable structure
 
-## ⚙️ Setup Instructions
+## Files
 
-### **1️⃣ Clone the Repository**
-```sh
-git clone https://github.com/your-username/Python-Chat-App.git
-cd Python-Chat-App
+- `server.py` — The server script that accepts client connections and handles message broadcasting.
+- `client.py` — The client script that connects to the server and sends/receives messages.
+
+## How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/VasudevGoud/Python-Chat-APP.git
+cd Python-Chat-APP
 ```
 
-### **2️⃣ Run the Server**
-```sh
-python server.py
-```
-- The server will start listening for client connections.
+### 2. Run the Server
 
-### **3️⃣ Run the Client**
-```sh
-python client.py
-```
-- The client will connect to the server.
-- You can send messages from the client to the server.
+In one terminal window:
 
-### **4️⃣ Stop the Client**
-To disconnect the client, type:
+```bash
+python3 server.py
+```
+
+This starts the server and begins listening for incoming connections.
+
+### 3. Run a Client
+
+In another terminal window:
+
+```bash
+python3 client.py
+```
+
+You can open multiple terminals to simulate multiple clients.
+
+## Usage
+
+- Type a message and hit Enter to send it.
+- To disconnect, type:
+
 ```
 DISCONNECT !
 ```
 
----
+## Requirements
 
-## 🤝 Contributing
-Feel free to **fork** this repository, make improvements, and submit a **pull request**!  
-For discussions, open an **issue** or contact me.
+- Python 3.x
 
-Happy coding! 🚀
+This app uses only Python's built-in libraries (`socket`, `threading`), so no extra dependencies are required.
+
+## Author
+
+- [VASUDEV GOUD BIKKI]
 ```
-
----
-
- 😃
